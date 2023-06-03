@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1>Welcome to <%= title %> Page</h1>
+    <h5>Name:Cheuk Man Chan</h5>
+    <h5>Email:kerrychan9512@gmail.com</h5>
+    <section class="page-section" id="contact">
+      <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <form id="contactForm" action="/">
+              <div class="form-floating mb-3">
+                <input class="form-control" id="firstName" name="firstName" type="text" placeholder="Enter your first name..." required />
+                <label for="firstName">First name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control" id="lastName" name="lastName" type="text" placeholder="Enter your last name..." required />
+                <label for="lastName">Last name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control" id="contactNumber" name="contactNumber" type="tel" placeholder="(123) 456-7890" required />
+                <label for="contactNumber">Contact number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button class="btn btn-primary btn-xl" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>
